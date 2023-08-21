@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px; /* ポップアップウィンドウの最小幅を設定 */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3列のグリッドレイアウト */
+      gap: 1px; /* グリッド要素間の間隔 */
+    }
+    .header {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      grid-column: span 3; /* ヘッダーを3列分に拡張 */
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+      grid-column: span 3; /* フッターを3列分に拡張 */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">Social Viewer</div>
+  <button class="link-button" id="openTwitterButton"><img src="images/x-icon.png" alt="X"></button>
+  <button class="link-button" id="openInstagramButton"><img src="images/Instagram-icon.png" alt="Instagram"></button>
+  <button class="link-button" id="openFacebookButton"><img src="images/Facebook-icon.png" alt="Facebook"></button>
+  <button class="link-button" id="openYouTubeButton"><img src="images/YouTube-icon.png" alt="YouTube"></button>
+  <button class="link-button" id="openTikTokButton"><img src="images/tiktok-icon.png" alt="TikTok"></button>
+  <button class="link-button" id="openTaittsuuButton"><img src="images/taittsuu-icon.png" alt="Taittsuu"></button>
+    <a href="https://kasiri.icu/get-social-viewer-download/" target="_blank" class="footer">Powered by Kasiri</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>
